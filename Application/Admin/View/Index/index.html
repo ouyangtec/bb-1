@@ -1,0 +1,187 @@
+<include file="Public:header"/>
+	<div class="portlet solid bordered light-grey">
+
+								<div class="portlet-title">
+
+									<div class="caption"><i class="icon-bar-chart"></i>Site Visits</div>
+
+									<div class="tools">
+
+										<div class="btn-group pull-right" data-toggle="buttons-radio">
+
+											<a href="" class="btn mini">Users</a>
+
+											<a href="" class="btn mini active">Feedbacks</a>
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="portlet-body">
+
+									<div id="site_statistics_loading" style="display: none;">
+
+										<img src="__PUBLIC__/Admin/image/loading.gif" alt="loading">
+
+									</div>
+
+									<div id="site_statistics_content" class="hide" style="display: block;">
+
+										<div id="site_statistics" class="chart" style="padding: 0px; position: relative;"><canvas class="flot-base" width="504" height="300" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 504px; height: 300px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 31px; top: 280px; left: 36px; text-align: center;">2</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 31px; top: 280px; left: 69px; text-align: center;">4</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 31px; top: 280px; left: 102px; text-align: center;">6</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 31px; top: 280px; left: 134px; text-align: center;">8</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 31px; top: 280px; left: 164px; text-align: center;">10</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 31px; top: 280px; left: 196px; text-align: center;">12</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 31px; top: 280px; left: 229px; text-align: center;">14</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 31px; top: 280px; left: 262px; text-align: center;">16</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 31px; top: 280px; left: 294px; text-align: center;">18</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 31px; top: 280px; left: 327px; text-align: center;">20</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 31px; top: 280px; left: 360px; text-align: center;">22</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 31px; top: 280px; left: 392px; text-align: center;">24</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 31px; top: 280px; left: 425px; text-align: center;">26</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 31px; top: 280px; left: 457px; text-align: center;">28</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 31px; top: 280px; left: 490px; text-align: center;">30</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 265px; left: 12px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 245px; left: 6px; text-align: right;">10</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 224px; left: 6px; text-align: right;">20</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 204px; left: 6px; text-align: right;">30</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 183px; left: 6px; text-align: right;">40</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 163px; left: 6px; text-align: right;">50</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 143px; left: 6px; text-align: right;">60</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 122px; left: 6px; text-align: right;">70</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 102px; left: 6px; text-align: right;">80</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 82px; left: 6px; text-align: right;">90</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 61px; left: 0px; text-align: right;">100</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 41px; left: 0px; text-align: right;">110</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 20px; left: 0px; text-align: right;">120</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 0px; left: 0px; text-align: right;">130</div></div></div><canvas class="flot-overlay" width="504" height="300" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 504px; height: 300px;"></canvas><div class="legend"><div style="position: absolute; width: 100px; height: 44px; top: 15px; right: 13px; background-color: rgb(255, 255, 255); opacity: 0.85;"> </div><table style="position:absolute;top:15px;right:13px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(209,38,16);overflow:hidden"></div></div></td><td class="legendLabel">Unique Visits</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(55,183,243);overflow:hidden"></div></div></td><td class="legendLabel">Page Views</td></tr></tbody></table></div></div>
+
+									</div>
+
+								</div>
+
+							</div>
+							<div class="portlet solid bordered light-grey">
+
+								<div class="portlet-title">
+
+									<div class="caption"><i class="icon-signal"></i>Server Load</div>
+
+									<div class="tools">
+
+										<div class="btn-group pull-right" data-toggle="buttons-radio">
+
+											<a href="" class="btn red mini active">
+
+											<span class="hidden-phone">Database</span>
+
+											<span class="visible-phone">DB</span></a>
+
+											<a href="" class="btn red mini">Web</a>
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="portlet-body">
+
+									<div id="load_statistics_loading" style="display: none;">
+
+										<img src="__PUBLIC__/Admin/image/loading.gif" alt="loading">
+
+									</div>
+
+									<div id="load_statistics_content" class="hide" style="display: block;">
+
+										<div id="load_statistics" style="height: 108px; padding: 0px; position: relative;"><canvas class="flot-base" width="504" height="108" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 504px; height: 108px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 88px; left: 12px; text-align: right;">0%</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 44px; left: 6px; text-align: right;">50%</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 0px; left: 0px; text-align: right;">100%</div></div></div><canvas class="flot-overlay" width="504" height="108" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 504px; height: 108px;"></canvas></div>
+
+									</div>
+
+								</div>
+
+							</div>
+							<div class="portlet box grey">
+
+							<div class="portlet-title">
+
+								<div class="caption"><i class="icon-user"></i>Table</div>
+
+								<div class="actions">
+
+									<a href="#" class="btn blue"><i class="icon-pencil"></i> Add</a>
+
+									<div class="btn-group">
+
+										<a class="btn green" href="#" data-toggle="dropdown">
+
+										<i class="icon-cogs"></i> Tools
+
+										<i class="icon-angle-down"></i>
+
+										</a>
+
+										<ul class="dropdown-menu pull-right">
+
+											<li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
+
+											<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
+
+											<li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
+
+											<li class="divider"></li>
+
+											<li><a href="#"><i class="i"></i> Make admin</a></li>
+
+										</ul>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="portlet-body">
+
+								<div id="sample_2_wrapper" class="dataTables_wrapper form-inline" role="grid"><div class="row-fluid"><div class="span6"><div id="sample_2_length" class="dataTables_length"><label><div class="select2-container m-wrap small" id="s2id_autogen1"><a href="javascript:void(0)" onclick="return false;" class="select2-choice" tabindex="-1">   <span>5</span><abbr class="select2-search-choice-close" style="display:none;"></abbr>   <div><b></b></div></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen2"><div class="select2-drop select2-with-searchbox" style="display:none">   <div class="select2-search">       <input type="text" autocomplete="off" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select size="1" name="sample_2_length" aria-controls="sample_2" class="m-wrap small select2-offscreen" tabindex="-1"><option value="5" selected="selected">5</option><option value="15">15</option><option value="20">20</option><option value="-1">All</option></select> per page</label></div></div><div class="span6"><div class="dataTables_filter" id="sample_2_filter"><label>Search: <input type="text" aria-controls="sample_2" class="m-wrap small"></label></div></div></div><table class="table table-striped table-bordered table-hover dataTable" id="sample_2" aria-describedby="sample_2_info">
+
+									<thead>
+
+										<tr role="row"><th style="width: 24px;" class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label=""><div class="checker"><span><input type="checkbox" class="group-checkable" data-set="#sample_2 .checkboxes"></span></div></th><th class="sorting" role="columnheader" tabindex="0" aria-controls="sample_2" rowspan="1" colspan="1" aria-label="Username: activate to sort column ascending" style="width: 104px;">Username</th><th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample_2" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending" style="width: 197px;">Email</th><th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample_2" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 110px;">Status</th></tr>
+
+									</thead>
+
+									
+
+								<tbody role="alert" aria-live="polite" aria-relevant="all"><tr class="gradeX odd">
+
+											<td class=" sorting_1"><div class="checker"><span><input type="checkbox" class="checkboxes" value="1"></span></div></td>
+
+											<td class=" ">shuxer</td>
+
+											<td class="hidden-480 "><a href="mailto:shuxer@gmail.com">shuxer@gmail.com</a></td>
+
+											<td class=" "><span class="label label-success">Approved</span></td>
+
+										</tr><tr class="gradeX even">
+
+											<td class=" sorting_1"><div class="checker"><span><input type="checkbox" class="checkboxes" value="1"></span></div></td>
+
+											<td class=" ">looper</td>
+
+											<td class="hidden-480 "><a href="mailto:looper90@gmail.com">looper90@gmail.com</a></td>
+
+											<td class=" "><span class="label label-warning">Suspended</span></td>
+
+										</tr><tr class="odd gradeX">
+
+											<td class=" sorting_1"><div class="checker"><span><input type="checkbox" class="checkboxes" value="1"></span></div></td>
+
+											<td class=" ">userwow</td>
+
+											<td class="hidden-480 "><a href="mailto:userwow@yahoo.com">userwow@yahoo.com</a></td>
+
+											<td class=" "><span class="label label-success">Approved</span></td>
+
+										</tr><tr class="odd gradeX even">
+
+											<td class=" sorting_1"><div class="checker"><span><input type="checkbox" class="checkboxes" value="1"></span></div></td>
+
+											<td class=" ">user1wow</td>
+
+											<td class="hidden-480 "><a href="mailto:userwow@gmail.com">userwow@gmail.com</a></td>
+
+											<td class=" "><span class="label label-inverse">Blocked</span></td>
+
+										</tr><tr class="odd gradeX">
+
+											<td class=" sorting_1"><div class="checker"><span><input type="checkbox" class="checkboxes" value="1"></span></div></td>
+
+											<td class=" ">restest</td>
+
+											<td class="hidden-480 "><a href="mailto:userwow@gmail.com">test@gmail.com</a></td>
+
+											<td class=" "><span class="label label-success">Approved</span></td>
+
+										</tr></tbody></table><div class="row-fluid"><div class="span6"><div class="dataTables_info" id="sample_2_info">Showing 1 to 5 of 12 entries</div></div><div class="span6"><div class="dataTables_paginate paging_bootstrap pagination"><ul><li class="prev disabled"><a href="#">← <span class="hidden-480">Prev</span></a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li class="next"><a href="#"><span class="hidden-480">Next</span> → </a></li></ul></div></div></div></div>
+
+							</div>
+
+						</div>
+<include file="Public:footer"/>
